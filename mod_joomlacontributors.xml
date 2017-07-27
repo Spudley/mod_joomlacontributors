@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.6" client="administrator" method="upgrade">
+	<name>MOD_JOOMLACONTRIBUTORS_NAME</name>
+	<author>Simon Champion</author>
+	<creationDate>July 2017</creationDate>
+    <copyright>Copyright (C) 2017 Simon Champion.</copyright>
+    <license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <authorEmail>simon@simonchampion.net</authorEmail>
+	<version>1.0.0</version>
+	<description>MOD_JOOMLACONTRIBUTORS_DESCRIPTION</description>
+	<files>
+		<filename module="mod_joomlacontributors">mod_joomlacontributors.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomlacontributors.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomlacontributors.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field
+                    name="avatarsToShow"
+                    type="text"
+                    label="MOD_JOOMLACONTRIBUTORS_AVATARS_LABEL"
+                    description="MOD_JOOMLACONTRIBUTORS_AVATARS_DESC"
+                    default="40" />
+                <field name="pages" type="list" description="MOD_JOOMLACONTRIBUTORS_PAGES_DESC" label="MOD_JOOMLACONTRIBUTORS_PAGES_LABEL" default="4">
+                    <option value="1">100</option>
+                    <option value="2">200</option>
+                    <option value="3">300</option>
+                    <option value="4">400</option>
+                    <option value="5">500</option>
+                </field>
+                <field name="sortType" type="list" description="MOD_JOOMLACONTRIBUTORS_SORT_DESC" label="MOD_JOOMLACONTRIBUTORS_SORT_LABEL" default="weighted">
+                    <option value="top">MOD_JOOMLACONTRIBUTORS_SORT_TOP</option>
+                    <option value="weighted">MOD_JOOMLACONTRIBUTORS_SORT_WEIGHTED</option>
+                    <option value="random">MOD_JOOMLACONTRIBUTORS_SORT_RANDOM</option>
+                </field>
+                <field
+                    name="avatarSize"
+                    type="text"
+                    label="MOD_JOOMLACONTRIBUTORS_SIZE_LABEL"
+                    description="MOD_JOOMLACONTRIBUTORS_SIZE_DESC"
+                    default="50" />
+            </fieldset>
+		</fields>
+	</config>
+</extension>
